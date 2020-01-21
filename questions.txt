@@ -1,0 +1,23 @@
+0.  BMP - 32 bits and 4,294,967,296 colors
+    GIF - 8 bits and 256 colors
+    JPEG - 256 colors out of 16 million possible
+    PNG - up to 48 bit
+1.  GIF
+2.  Lossy compression makes compressed files lose some data after uncompressing. 
+    Lossless keeps all the original data after uncompressing.
+3.  JPEG
+4.  Deleting a file on FAT usually just rewrites the pointer data for the file.
+5.  I can physically destroy the hard drive after I delete said files.
+6.  stdint.h is a header file containing definitions of different types.
+7.  You use these types to ensure unity in size of type across different operating systems.
+8.  BYTE is 1 byte. DWORD is 4 bytes. LONG is 4 bytes. WORD is 2 bytes.
+9.  All BMP files must start with 0x424D.
+10. bfSize is the size of the bitmap file and biSize is the size of the structure.
+11. It means the bitmap is top-down and starts in the upper-left corner.
+12. biBitCount specifies the color depth.
+13. It might return NULL because it does not have access to the file.
+14. It only has '1' as its third arguement because it's always reading 1 object.
+15. padding is assigned the value '3'.
+16. fSeek sets the file position for the stream it is passed as an arguement.
+17. SEEK_CUR is an origin value to be passed to fseek signifying that you start padding from the current location.
+18. Possibly David J. Malan
